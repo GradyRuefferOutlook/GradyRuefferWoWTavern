@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernShop", "TavernShop\TavernShop.csproj", "{2755002F-8681-4A90-9064-7D19E935EF0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2755002F-8681-4A90-9064-7D19E935EF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2755002F-8681-4A90-9064-7D19E935EF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2755002F-8681-4A90-9064-7D19E935EF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2755002F-8681-4A90-9064-7D19E935EF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B6A11EB-E5F2-4983-85C3-2DCB37EE27A4}
+	EndGlobalSection
+EndGlobal

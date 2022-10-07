@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2755002F-8681-4A90-9064-7D19E935EF0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TavernShop</RootNamespace>
+    <AssemblyName>TavernShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoodbyeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlankSpeech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\517245-lions-pride-inn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WoW-Classic-Alliance-Tavern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482756.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482788.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482734.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482748.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482789.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\517247-lions-pride-inn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_135.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XButton-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoodbyeButton-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchantWindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfInkeeper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfInkeeperRightSide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29000835_Innkeeper_Belm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Innkeeper_Belm%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagSlots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_holiday_tow_spicepotion03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_misc_food_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inv_drink_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2560px-Speech_bubble.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv_misc_bag_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv_misc_bag_10-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achievement_guildperk_bartering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCGreeting04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCVendor02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCVendor01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCGreeting05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCFarewell02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final_633f854827e3d7006607c2fc_747532.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCFarewell01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCFarewell03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleStandardNPCFarewell04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCFarewell03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCFarewell02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMaleGrimNPCFarewell01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uCharacterSheetClose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uCharacterSheetOpen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\257518-waldram-scribble-short_wJ2yxdSn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundMusic.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
