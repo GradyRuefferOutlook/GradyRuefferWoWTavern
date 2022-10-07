@@ -694,7 +694,7 @@ namespace TavernShop
                 }
 
                 leftSideReceiptLabel.Text += "\n\nSell Total:";
-                rightSideReceiptLabel.Text += $"\n\n{convertPrice(totalSold)}";
+                rightSideReceiptLabel.Text += $"\n\n${convertPrice(totalSold)}";
 
                 leftSideReceiptLabel.Text += "\n\n\nTendered:";
                 rightSideReceiptLabel.Text += "\n\n\n";
@@ -726,14 +726,14 @@ namespace TavernShop
                 hearthglenAmbrosiaPrevCounter = hearthglenAmbrosiaCounter;
                 melonJuicePrevCounter = melonJuiceCounter;
 
-                footeTripelPrevCounter = 0;
-                dwarvenMeadPrevCounter = 0;
-                lagraveStoutPrevCounter = 0;
-                springWaterPrevCounter = 0;
-                beerBastedBoarRibsPrevCounter = 0;
-                rhapsodyMaltPrevCounter = 0;
-                hearthglenAmbrosiaPrevCounter = 0;
-                melonJuicePrevCounter = 0;
+                footeTripelSellCounter = 0;
+                dwarvenMeadSellCounter = 0;
+                lagraveStoutSellCounter = 0;
+                springWaterSellCounter = 0;
+                beerBastedBoarRibsSellCounter = 0;
+                rhapsodyMaltSellCounter = 0;
+                hearthglenAmbrosiaSellCounter = 0;
+                melonJuiceSellCounter = 0;
 
                 footeTripelCounter = 0;
                 dwarvenMeadCounter = 0;
@@ -749,6 +749,16 @@ namespace TavernShop
                 receiptPrinter.Start();
                 TavernLoop.Stop();
                 tavernMusic.Stop();
+
+                goldTenderedInput.Text = "";
+                copperTenderedInput.Text = "";
+                silverTenderedInput.Text = "";
+
+                receiptButton.Enabled = false;
+
+                goldOrderCost.Text = "";
+                copperOrderCost.Text = "";
+                silverOrderCost.Text = "";
             }
             else
             {
@@ -909,6 +919,13 @@ namespace TavernShop
                     rightSideReceiptLabel.Text += $"\n${convertPrice(waterSoldPrice)}";
                 }
             }
+        }
+
+        private void restartButton_Click(object sender, EventArgs e)
+        {
+            //Restart the Application
+            Application.Restart();
+            Refresh();
         }
 
         private void TavernLoop_Tick(object sender, EventArgs e)
@@ -1505,6 +1522,7 @@ namespace TavernShop
 
             dwarfTalkLabel.Text = "Welcome Traveller!\n     Might I interest ye in a pint...\nor perhaps an imported delight!\n     Something to clear ye head\nor warm ye belly!";
             speechLabel.Text = "Where are we?";
+            leeroySpeechLabel.Text = "Leeeeroy Jennnnkins!";
         }
 
         private void speechBubbleButton_Click(object sender, EventArgs e)

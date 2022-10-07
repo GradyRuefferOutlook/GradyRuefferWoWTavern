@@ -156,6 +156,7 @@
             this.leftSideReceiptLabel = new System.Windows.Forms.Label();
             this.receiptPrinter = new System.Windows.Forms.Timer(this.components);
             this.TavernLoop = new System.Windows.Forms.Timer(this.components);
+            this.restartButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundTavern)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speechWindowNotInteractive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodbyePress)).BeginInit();
@@ -1717,6 +1718,19 @@
             this.TavernLoop.Interval = 468000;
             this.TavernLoop.Tick += new System.EventHandler(this.TavernLoop_Tick);
             // 
+            // restartButton
+            // 
+            this.restartButton.BackColor = System.Drawing.Color.DarkRed;
+            this.restartButton.Font = new System.Drawing.Font("Morpheus", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restartButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.restartButton.Location = new System.Drawing.Point(118, -4);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(198, 38);
+            this.restartButton.TabIndex = 125;
+            this.restartButton.Text = ":New Customer:";
+            this.restartButton.UseVisualStyleBackColor = false;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
+            // 
             // DwarvenTavern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1724,6 +1738,7 @@
             this.BackgroundImage = global::TavernShop.Properties.Resources.TavernBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(974, 621);
+            this.Controls.Add(this.restartButton);
             this.Controls.Add(this.leftSideReceiptLabel);
             this.Controls.Add(this.rightSideReceiptLabel);
             this.Controls.Add(this.receiptDisplay);
@@ -1851,7 +1866,7 @@
             this.Name = "DwarvenTavern";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "DwarvenTavern";
             ((System.ComponentModel.ISupportInitialize)(this.backgroundTavern)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speechWindowNotInteractive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodbyePress)).EndInit();
@@ -2045,6 +2060,7 @@
         private System.Windows.Forms.Label leftSideReceiptLabel;
         private System.Windows.Forms.Timer receiptPrinter;
         private System.Windows.Forms.Timer TavernLoop;
+        private System.Windows.Forms.Button restartButton;
     }
 }
 
